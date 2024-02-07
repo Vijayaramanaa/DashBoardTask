@@ -1,0 +1,136 @@
+.middle{
+    background-color: rgb(9, 1, 17);
+    color: rgb(221, 212, 200);
+    display: flex;
+    flex-direction:column;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .hone{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        font-weight: bolder;
+        background-color: rgb(14, 23, 31);
+        padding-top: 10px;
+        margin: 0;
+       
+    }
+    .display{
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+        position: relative;
+        animation:trans 2s ; 
+            
+            @keyframes trans {
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                    transition: 4s ease;
+                }
+                
+            }
+        
+
+        button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgb(185, 210, 193);
+            border: none;
+            z-index: 99;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .left{
+            flex: 1;
+            width: 250px;
+            height: 90vh;
+            background-color: rgb(135, 163, 156);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            transition: 2s linear;
+            
+
+            .divone{
+                background-color: rgb(162, 224, 62);
+                width: 250px;
+                text-align: center;
+                margin-top: -160px;
+                
+                
+
+                h1{
+                    color: rgb(229, 133, 17);
+                }
+                h2{
+                    color: black;
+                    
+                }
+
+
+            }
+            .divtwo{
+                 padding-left: 60px; 
+                
+                li{
+                    color: black;
+                    list-style: none;
+                    padding: 10px ;
+                    width: 250px;
+                    font-weight: bolder;
+                    font-size: 30px;
+                    margin: 10px ;
+                    cursor: pointer;
+                    
+                }
+            }
+                li:hover{
+                    color: red
+                }
+            
+            
+        }
+        
+        .right{
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            height:auto;
+            width: 300px;
+
+            .chartComp{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 50px;
+                margin-top: 20px;
+
+            }
+        }
+        
+        
+    }
+    .line{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+}
